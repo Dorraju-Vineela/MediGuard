@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediGuard - Medication Interaction Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MediGuard</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Login</a>
+            <a href="#">Sign Up</a>
+        </nav>
+    </header>
+    <main>
+        <section id="login">
+            <h2>Login</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section id="signup">
+            <h2>Sign Up</h2>
+            <form>
+                <label for="new-username">Username:</label>
+                <input type="text" id="new-username" name="new-username">
+                <label for="new-password">Password:</label>
+                <input type="password" id="new-password" name="new-password">
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+        <section id="medication-input">
+            <h2>Medication Input</h2>
+            <form>
+                <label for="medication">Medication Name:</label>
+                <input type="text" id="medication" name="medication">
+                <button type="submit">Check Interaction</button>
+            </form>
+            <div id="interaction-alerts"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
